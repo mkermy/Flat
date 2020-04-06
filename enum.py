@@ -2,7 +2,6 @@
 
 import sys
 import datetime
-from termcolor import coloredm  
 
 class bcolors:
     HEADER = '\033[95m'
@@ -16,4 +15,9 @@ class bcolors:
 
 time = datetime.datetime.now()
 
-print(bcolors.WARNING + f"Starting Scans At {time}")
+print(f"\n{bcolors.FAIL}Starting Scans At {time}\n")
+
+#! /bin/bash 
+sudo apt install nmap
+
+
